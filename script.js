@@ -33,6 +33,11 @@ links.forEach((link) => {
         top: 560,
         behavior: "smooth"
       });
+    } else if ( el == 'project') {
+      window.scrollTo({
+        top: 1150,
+        behavior: "smooth"
+      });
     }
   });
 });
