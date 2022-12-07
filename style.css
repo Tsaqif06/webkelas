@@ -36,35 +36,22 @@ nav ul li::before {
   height: 3px;
   width: 0;
   background-color: #fff;
-  right: 50%;
-  bottom: 0;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-}
-
-nav ul li::after {
-  content: "";
-  position: absolute;
-  height: 3px;
-  width: 0;
-  background-color: #fff;
   left: 50%;
   bottom: 0;
+  transform: translateX(-50%);
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
 
 nav ul li:hover::before {
-  width: 50%;
-}
-nav ul li:hover::after {
-  width: 50%;
+  width: 100%;
 }
 
 button.btn-close {
@@ -120,6 +107,7 @@ button.btn-close {
 
 #about {
   position: relative;
+  height: 100vh;
   background: url(img/about.jpg) no-repeat left;
   background-size: 65%;
   background-color: #eaeaea;
@@ -180,32 +168,23 @@ button.btn-close {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 600px) {
-  .cta #scene #text {
-    text-shadow: 1px 1px 0 #e1e1e1, 2px 2px 0 #e1e1e1, 3px 3px 0 #e1e1e1,
-      4px 4px 0 #e1e1e1, 5px 5px 0 #e1e1e1, 6px 6px 0 #e1e1e1,
-      13px 11px 0 rgba(0, 0, 0, 0.1);
-  }
-}
-
 @media screen and (max-width: 1200px) {
   nav ul li::before {
     display: none;
   }
-
   nav ul li::after {
     content: "";
     position: absolute;
     height: 3px;
     width: 0;
     background-color: #fff;
-    left: 0;
     bottom: 0;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
+    left: 0;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
   }
 
   nav ul li:hover::after {
@@ -218,7 +197,29 @@ button.btn-close {
 }
 
 @media screen and (max-width: 1000px) {
+  #about {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 100px 40px;
+  }
+
   .inner {
-    padding: 80px;
+    width: 100%;
+  }
+  .cta #scene #text {
+    text-shadow: 1px 1px 0 #e1e1e1, 2px 2px 0 #e1e1e1, 3px 3px 0 #e1e1e1,
+      4px 4px 0 #e1e1e1, 5px 5px 0 #e1e1e1, 6px 6px 0 #e1e1e1,
+      13px 11px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #about {
+    padding: 0;
+  }
+  .inner {
+    margin: 40px auto;
+    padding: 60px;
   }
 }
