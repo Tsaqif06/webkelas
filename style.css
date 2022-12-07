@@ -44,6 +44,7 @@ nav ul li::before {
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
 }
+
 nav ul li::after {
   content: "";
   position: absolute;
@@ -59,15 +60,15 @@ nav ul li::after {
   -o-transition: 0.5s;
 }
 
-.primary {
-  background-color: #1cafff;
-}
-
 nav ul li:hover::before {
   width: 50%;
 }
 nav ul li:hover::after {
   width: 50%;
+}
+
+.primary {
+  background-color: #1cafff;
 }
 
 .hero {
@@ -131,11 +132,11 @@ nav ul li:hover::after {
   margin-right: 10px;
   background-color: #fdfdfd;
   padding: 60px;
-  border-radius: 5%;
-  -webkit-border-radius: 5%;
-  -moz-border-radius: 5%;
-  -ms-border-radius: 5%;
-  -o-border-radius: 5%;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
   box-shadow: -2px 6px 115px -5px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -2px 6px 115px -5px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -2px 6px 115px -5px rgba(0, 0, 0, 0.75);
@@ -179,5 +180,40 @@ nav ul li:hover::after {
     text-shadow: 1px 1px 0 #e1e1e1, 2px 2px 0 #e1e1e1, 3px 3px 0 #e1e1e1,
       4px 4px 0 #e1e1e1, 5px 5px 0 #e1e1e1, 6px 6px 0 #e1e1e1,
       13px 11px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  nav ul li::before {
+    display: none;
+  }
+
+  nav ul li::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-color: #fff;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+  }
+
+  nav ul li:hover::after {
+    width: 100%;
+  }
+
+  .inner {
+    padding: 80px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .inner {
+    padding: 80px;
   }
 }
