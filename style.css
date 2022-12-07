@@ -67,6 +67,11 @@ nav ul li:hover::after {
   width: 50%;
 }
 
+button.btn-close {
+  filter: invert(0.8);
+  -webkit-filter: invert(0.8);
+}
+
 .primary {
   background-color: #1cafff;
 }
