@@ -38,6 +38,11 @@ links.forEach((link) => {
         top: 1125,
         behavior: "smooth"
       });
+    } else if ( el == 'contact') {
+      window.scrollTo({
+        top: 1525,
+        behavior: "smooth"
+      });
     }
   });
 });

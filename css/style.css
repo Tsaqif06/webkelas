@@ -109,7 +109,7 @@ button.btn-close {
 
 #about {
   position: relative;
-  background: url(./img/about.jpg) no-repeat left;
+  background: url(.././img/about.jpg) no-repeat left;
   background-size: 72%;
   background-color: #eaeaea;
   overflow: hidden;
