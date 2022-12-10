@@ -40,7 +40,7 @@
               <a class="nav-link text-white" data-link="project" >Project</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" data-link="contact" >Contact</a>
+              <a href="#contact" class="nav-link text-white" data-link="contact" >Contact</a>
             </li>
           </div>
         </div>
@@ -76,8 +76,8 @@
         Photo by <a href="https://unsplash.com/@kaitlynbaker?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kaitlyn Baker</a> on <a href="https://unsplash.com/s/photos/computer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       </div>
       <div class="inner">
-        <h1>About Us</h1>
-        <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime possimus iusto deserunt eum reiciendis animi optio distinctio repudiandae est qui molestias fuga excepturi beatae consequatur at repellendus, laudantium molestiae nam eaque sed tenetur nesciunt illum. Similique, necessitatibus rerum quaerat sequi officia adipisci dolor maxime ducimus.</p>
+        <h1 class="fw-bolder">About Us</h1>
+        <p class="text">Kami adalah salah satu bagian dari kelas yang ada di SMKN 4 Malang. Kelas kami beranggotakan 35 orang. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa repudiandae quae, eligendi omnis ut. Illo dolores doloribus pariatur cum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam suscipit sed ducimus voluptate praesentium inventore, atque quidem assumenda vitae voluptatum!</p>
         <div class="keahlian">
           <span>Mobile Developer</span>
           <span>Web Developer</span>
@@ -91,71 +91,85 @@
       <div class="container-fluid">
         <div class="container py-3">
           <div class="row mb-3">
-            <h1 class="text-center mb-3">Our Projects</h1>
-            <p class="text-center">This project was created to complete PJBL (Project Based Learning) assignments at school</p>
+            <h1 class="text-center mb-3 text-white fw-bolder">Our Projects</h1>
+            <p class="text-center text-white">This project was created to complete PJBL (Project Based Learning) assignments at school</p>
           </div>
           <div class="row d-flex justify-content-around align-items-center">
-            <div class="card my-2" style="width: 18rem;">
-              <img src="./img/game1.jpeg" class="card-img-top" alt="PushTheBox">
-              <div class="card-body">
-                <h5 class="card-title">Game C++</h5>
-                <p class="card-text">Projek Membuat Game Dari Bahasa C++</p>
-                <a href="./download/PushtheBox (Release v1.5).rar" download="PushtheBox (Release v1.5).rar" title="Click To Download!" class="btn btn-primary">Download</a>
+              <div class="card my-2" style="width: 18rem;">
+                <img src="./img/game1.jpeg" class="card-img-top" alt="PushTheBox">
+                <div class="card-body">
+                  <h5 class="card-title">Game C++</h5>
+                  <p class="card-text">Projek Membuat Game Dari Bahasa C++</p>
+                  <a href="./download/PushtheBox (Release v1.5).rar" download="PushtheBox (Release v1.5).rar" title="Click To Download!" class="btn btn-primary">Download</a>
+                </div>
               </div>
-            </div>
-            <div class="card my-2" style="width: 18rem;">
-              <img src="./img/game.jpeg" class="card-img-top" alt="Desain Figma">
-              <div class="card-body">
-                <h5 class="card-title">Desain Figma</h5>
-                <p class="card-text">Projek Membuat Foto Album Kelas Di Figma</p>
-                <a href="https://figma.com" title="Click To Visit!" target="_blank" class="btn btn-primary">Visit</a>
+              <div class="card my-2" style="width: 18rem;">
+                <img src="./img/game.jpeg" class="card-img-top" alt="Desain Figma">
+                <div class="card-body">
+                  <h5 class="card-title">Desain Figma</h5>
+                  <p class="card-text">Projek Membuat Foto Album Kelas Di Figma</p>
+                  <a href="https://figma.com" title="Click To Visit!" target="_blank" class="btn btn-primary">Visit</a>
+                </div>
               </div>
-            </div>
-            <div class="card my-2" style="width: 18rem;">
-              <img src="./img/web.jpeg" class="card-img-top" alt="Web Statis SMKN 4 Malang">
-              <div class="card-body">
-                <h5 class="card-title">Web Statis</h5>
-                <p class="card-text">Projek Membuat Web Statis Dari HTML, CSS dan JS</p>
-                <a href="https://SMKN-4-Malang.xrplc.repl.co" title="Click To Visit!" target="_blank" class="btn btn-primary">Visit</a>
+              <div class="card my-2" style="width: 18rem;">
+                <img src="./img/web.jpeg" class="card-img-top" alt="Web Statis SMKN 4 Malang">
+                <div class="card-body">
+                  <h5 class="card-title">Web Statis</h5>
+                  <p class="card-text">Projek Membuat Web Statis Dari HTML, CSS dan JS</p>
+                  <a href="https://SMKN-4-Malang.xrplc.repl.co" title="Click To Visit!" target="_blank" class="btn btn-primary">Visit</a>
+                </div>
               </div>
-            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Contact -->
     <section id="contact" class="my-5">
       <div class="container-fluid">
         <div class="container">
           <div class="row">
-            <h1 class="text-center">Contact Us</h1>
+            <h1 class="text-center fw-bolder">Contact Us</h1>
             <hr>
           </div>
           <div class="row">
-            <form action="">
+            <form name="x-rpl-c-contact-message">
               <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Darren Watkins Jr.">
+                <input type="text" class="form-control" id="name" placeholder="Darren Watkins Jr." name="nama" required>
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                <input type="email" class="form-control" id="email" placeholder="name@example.com" name="email" required>
               </div>
               <div class="mb-3">
                 <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="mesasage" rows="3" placeholder="Type your message here!"></textarea>
+                <textarea class="form-control" id="mesasage" rows="3" placeholder="Type your message here!" name="pesan" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-kirim">Submit!</button>
+              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
+              <div class="alert alert-success alert-dismissible fade show d-none mx-5" role="alert">
+                <strong>Thank you!</strong> Your message has been sent
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+              <div class="alert alert-danger alert-dismissible fade show d-none mx-5" role="alert">
+                <strong>Sorry!</strong> Your message has not been sent, please try again
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
               </div>
             </form>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Footer -->
+    
+
     <script src="./js/script.js"></script>
-    <script
-      src="./js/bootstrap.js"
-    ></script>
-    <script
-      src="./js/popper.min.js"
-    ></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/popper.min.js"></script>
   </body>
 </html>

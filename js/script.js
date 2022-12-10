@@ -40,9 +40,47 @@ links.forEach((link) => {
       });
     } else if ( el == 'contact') {
       window.scrollTo({
-        top: 1525,
+        top: 1825,
         behavior: "smooth"
       });
     }
   });
 });
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzXGUjl1mVXWhnpt-kjKFKlLUjWFqSPTDCGcTcrDfY6FP6LABMRLKbTc10c0QLl9rtR/exec'
+const form = document.forms['x-rpl-c-contact-message']
+const btnKirim = document.querySelector('.btn-kirim');
+const btnLoading = document.querySelector('.btn-loading');
+const successAlert = document.querySelector('.alert-success');
+const errorAlert = document.querySelector('.alert-danger');
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  btnLoading.classList.toggle('d-none');
+  btnKirim.classList.toggle('d-none');
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+      btnLoading.classList.toggle('d-none');
+      btnKirim.classList.toggle('d-none');
+      successAlert.classList.remove('d-none')
+      successAlert.classList.add('d-inline-block')
+      setTimeout(() => {
+        successAlert.classList.remove('d-inline-block')
+        successAlert.classList.add('d-none')
+      }, 5000);
+      form.reset();
+      console.log('success', response)
+    })
+    .catch(error => {
+      btnLoading.classList.toggle('d-none');
+      btnKirim.classList.toggle('d-none');
+      errorAlert.classList.remove('d-none')
+      errorAlert.classList.add('d-inline-block')
+      setTimeout(() => {
+        errorAlert.classList.remove('d-inline-block')
+        errorAlert.classList.add('d-none')
+      }, 5000);
+      form.reset();
+      console.log('error', error.message)
+  })
+})

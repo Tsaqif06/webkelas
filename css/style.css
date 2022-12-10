@@ -222,6 +222,12 @@ img {
   font-size: 20px;
 }
 
+#project {
+  height: 110vh;
+  width: 100%;
+  background-color: rgb(8, 67, 135);
+}
+
 @media screen and (max-width: 1200px) {
   nav ul li::before {
     display: none;
@@ -273,7 +279,19 @@ img {
     padding: 0;
   }
   .inner {
-    margin: 40px auto;
-    padding: 60px;
+    margin: 40px 0;
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #project {
+    height: 165vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #project {
+    height: 230vh;
   }
 }
