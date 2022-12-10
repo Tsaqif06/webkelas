@@ -35,12 +35,12 @@ links.forEach((link) => {
       });
     } else if ( el == 'project') {
       window.scrollTo({
-        top: 1125,
+        top: 1185,
         behavior: "smooth"
       });
     } else if ( el == 'contact') {
       window.scrollTo({
-        top: 1825,
+        top: 1810,
         behavior: "smooth"
       });
     }
