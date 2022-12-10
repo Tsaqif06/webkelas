@@ -327,12 +327,12 @@ footer .social-icon li a:hover {
 
 @media screen and (max-width: 992px) {
   #project {
-    height: 183vh;
+    height: 188vh;
   }
 }
 
 @media screen and (max-width: 768px) {
   #project {
-    height: 260vh;
+    height: 270vh;
   }
 }
