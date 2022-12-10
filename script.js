@@ -35,7 +35,7 @@ links.forEach((link) => {
       });
     } else if ( el == 'project') {
       window.scrollTo({
-        top: 1150,
+        top: 1125,
         behavior: "smooth"
       });
     }
