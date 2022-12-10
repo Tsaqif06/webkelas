@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>X RPL C</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.ico" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="./css/bootstrap.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="container mt-2">
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-transparent d-flex fixed-top justify-content-center align-content-around px-5 py-3"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">X RPL C</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">X RPL C</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+            <div class="mx-auto"></div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" data-link="home" aria-current="page" >Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" data-link="about" >About</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link text-white" data-link="project" >Project</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link text-white" data-link="contact" >Contact</a>
+            </li>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+
+    <!-- Home -->
+    <section class="hero" id="home">
+      <div class="cta">
+        <div id="scene">
+          <h2 id="text" class="object" data-value="3">X RPL C</h2>
+        </div>
+        <div class="layer">
+          <img src="./img/img1.png" class="object" data-value="-2" alt="Figma">
+          <img src="./img/img2.png" class="object" data-value="6" alt="JavaScript">
+          <img src="./img/img3.png" class="object" data-value="4" alt="CSS">
+          <img src="./img/img4.png" class="object" data-value="-6" alt="HTML">
+          <img src="./img/img5.png" class="object" data-value="8" alt="PHP">
+          <img src="./img/img6.png" class="object" data-value="-4" alt="Java">
+          <img src="./img/img7.png" class="object" data-value="5" alt="VSCode">
+          <img src="./img/img8.png" class="object" data-value="9" alt="C++">
+          <img src="./img/img9.png" class="object" data-value="-5" alt="Phyton">
+          <img src="./img/img10.png" class="object" data-value="-7" alt="CodeBlocks">
+        </div>
+      </div>
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+      <div class="credit">
+        Photo by <a href="https://unsplash.com/@kaitlynbaker?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kaitlyn Baker</a> on <a href="https://unsplash.com/s/photos/computer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      </div>
+      <div class="inner">
+        <h1 class="fw-bolder">About Us</h1>
+        <p class="text">Kami adalah salah satu bagian dari kelas yang ada di SMKN 4 Malang. Kelas kami beranggotakan 35 orang, dengan 24 murid laki - laki, dan 11 murid perempuan. Kelas kami mempunyai slogan, yakni "Cerdas, Cermat, Ceria, Asolole Jos!" yang tercetus pertama kali pada 19 Juli 2022. Kami berorientasi keranah pemrograman, nantinya akan ada pembagian divisi untuk setiap murid, dan para murid berhak memilih divisinya masing - masing. Divisi yang nantinya terbentuk ada di bawah ini.</p>
+          <span>Mobile Developer</span>
+          <span>Web Developer</span>
+          <span>Web Designer</span>
+        </div> 
+      </div>
+    </section>
+
+    <!-- Project -->
+    <section id="project" class="mb-5">
+      <div class="container-fluid">
+        <div class="container py-3">
+          <div class="row mb-3">
+            <h1 class="text-center mb-3 text-white fw-bolder">Our Projects</h1>
+            <p class="text-center text-white">This project was created to complete PJBL (Project Based Learning) assignments at school</p>
+          </div>
+          <div class="row d-flex justify-content-around align-items-center">
+              <div class="card my-2" style="width: 18rem;">
+                <img src="./img/game1.jpeg" class="card-img-top" alt="PushTheBox">
+                <div class="card-body">
+                  <h5 class="card-title">Game C++</h5>
+                  <p class="card-text">Projek Membuat Game Dari Bahasa C++</p>
+                  <a href="./download/PushtheBox (Release v1.5).rar" download="PushtheBox (Release v1.5).rar" title="Click To Download!" class="btn btn-primary">Download</a>
+                </div>
+              </div>
+              <div class="card my-2" style="width: 18rem;">
+                <img src="./img/game.jpeg" class="card-img-top" alt="Desain Figma">
+                <div class="card-body">
+                  <h5 class="card-title">Desain Figma</h5>
+                  <p class="card-text">Projek Membuat Foto Album Kelas Di Figma</p>
+                  <a href="https://figma.com" title="Click To Visit!" target="_blank" class="btn btn-primary">Visit</a>
+                </div>
+              </div>
+              <div class="card my-2" style="width: 18rem;">
+                <img src="./img/web.jpeg" class="card-img-top" alt="Web Statis SMKN 4 Malang">
+                <div class="card-body">
+                  <h5 class="card-title">Web Statis</h5>
+                  <p class="card-text">Projek Membuat Web Statis Dari HTML, CSS dan JS</p>
+                  <a href="https://SMKN-4-Malang.xrplc.repl.co" title="Click To Visit!" target="_blank" class="btn btn-primary">Visit</a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="my-5">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <h1 class="text-center fw-bolder">Contact Us</h1>
+            <hr>
+          </div>
+          <div class="row">
+            <form name="x-rpl-c-contact-message">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Darren Watkins Jr." name="nama" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com" name="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="mesasage" rows="3" placeholder="Type your message here!" name="pesan" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-kirim">Submit!</button>
+              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
+              <div class="alert alert-success alert-dismissible fade show d-none mx-5" role="alert">
+                <strong>Thank you!</strong> Your message has been sent
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+              <div class="alert alert-danger alert-dismissible fade show d-none mx-5" role="alert">
+                <strong>Sorry!</strong> Your message has not been sent, please try again
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+      <ul class="social-icon">
+        <li>
+          <a
+            href="https://www.instagram.com/xrplc_grf/"
+            target="_blank"
+            ><ion-icon name="logo-instagram"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/@xrplc1667"
+            target="_blank"
+            ><ion-icon name="logo-youtube"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a href="" target="_blank"
+            ><ion-icon name="logo-whatsapp"></ion-icon
+          ></a>
+        </li>
+      </ul>
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  </body>
+</html>
