@@ -226,6 +226,8 @@ img {
   height: 110vh;
   width: 100%;
   background-color: rgb(8, 67, 135);
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 footer {
